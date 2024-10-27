@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="603.0" prefWidth="861.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.controller.MainController">
+    <children>
+        <ImageView fitHeight="459.0" fitWidth="510.0" layoutX="421.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/hero-image.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="343.0" layoutY="581.0" text="2024 @ copy Right NovelNook" textFill="SILVER">
+            <font>
+                <Font name="Segoe UI Bold" size="12.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="closeButton" fitHeight="15.0" fitWidth="55.0" layoutX="839.0" layoutY="7.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/close-image.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fitHeight="78.0" fitWidth="81.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="95.0" layoutY="38.0" text="Novel Nook">
+            <font>
+                <Font name="Forte" size="28.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="37.0" layoutY="457.0" prefHeight="50.0" prefWidth="149.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Sign Up" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Segoe UI Bold" size="13.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="200.0" layoutY="457.0" prefHeight="50.0" prefWidth="150.0" ripplerFill="#f7f5f5" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: #000;" text="Sign In">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Segoe UI Bold" size="13.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="46.0" layoutY="120.0" prefHeight="34.0" prefWidth="117.0" text="Discover" textFill="SILVER">
+            <font>
+                <Font name="Segoe UI Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="170.0" layoutY="120.0" prefHeight="34.0" prefWidth="64.0" text="your">
+            <font>
+                <Font name="Segoe UI Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="154.0" prefHeight="34.0" prefWidth="64.0" text="next">
+            <font>
+                <Font name="Segoe UI Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="114.0" layoutY="154.0" prefHeight="34.0" prefWidth="125.0" text="favourite">
+            <font>
+                <Font name="Segoe UI Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="242.0" layoutY="154.0" prefHeight="34.0" prefWidth="78.0" text="Book." textFill="SILVER">
+            <font>
+                <Font name="Segoe UI Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="51.0" layoutY="225.0" text="Escape into the world of literature at Novel Nook your" />
+        <Label alignment="CENTER" layoutX="51.0" layoutY="243.0" text="haven for book lovers." />
+        <Label alignment="CENTER" layoutX="51.0" layoutY="293.0" text="Browse our curated collection of bestsellers, classics," />
+        <Label alignment="CENTER" layoutX="51.0" layoutY="311.0" text="and hidden gems. Let our expert staff guide you in" />
+        <Label alignment="CENTER" layoutX="51.0" layoutY="329.0" text="finding your next great read. Whether you're a fiction" />
+        <Label alignment="CENTER" layoutX="51.0" layoutY="347.0" text="fanatic, a non-fiction nerd, or a poetry enthusiast, we've " />
+        <Label alignment="CENTER" layoutX="51.0" layoutY="366.0" text="got you covered. " />
+        <Label alignment="CENTER" layoutX="48.0" layoutY="405.0" text="Come, explore, and get lost in the pages with us." />
+        <Label alignment="CENTER" layoutX="402.0" layoutY="36.0" onMouseClicked="#gotoHomeView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70;" text="Home">
+            <font>
+                <Font name="Segoe UI Bold" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Label>
+        <Label alignment="CENTER" layoutX="504.0" layoutY="36.0" onMouseClicked="#gotoServiceView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Service" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI Bold" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Label alignment="CENTER" layoutX="610.0" layoutY="36.0" onMouseClicked="#gooAboutView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70;" text="About ">
+            <font>
+                <Font name="Segoe UI Bold" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Label alignment="CENTER" layoutX="715.0" layoutY="35.0" onMouseClicked="#gotoContactView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70;" text="Contact">
+            <font>
+                <Font name="Segoe UI Bold" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+    </children>
+</AnchorPane>
