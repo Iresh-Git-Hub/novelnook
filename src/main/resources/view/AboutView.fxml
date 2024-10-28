@@ -10,12 +10,12 @@
 
 <AnchorPane fx:id="mainPane" prefHeight="603.0" prefWidth="861.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.controller.MainController">
     <children>
-        <ImageView fitHeight="459.0" fitWidth="510.0" layoutX="421.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="503.0" fitWidth="402.0" layoutX="484.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../images/hero-image.png" />
+                <Image url="@../images/aboutus-image.png" />
             </image>
         </ImageView>
-        <Label layoutX="343.0" layoutY="581.0" text="2024 @ copy Right NovelNook" textFill="SILVER">
+        <Label layoutX="325.0" layoutY="581.0" text="© 2024 NovelNook, Inc. All rights reserved." textFill="SILVER">
             <font>
                 <Font name="Segoe UI Bold" size="12.0" />
             </font>
@@ -38,55 +38,6 @@
                 <Font name="Forte" size="28.0" />
             </font>
         </Label>
-        <JFXButton layoutX="37.0" layoutY="457.0" prefHeight="50.0" prefWidth="149.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Sign Up" textFill="WHITE">
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
-            <font>
-                <Font name="Segoe UI Bold" size="13.0" />
-            </font>
-        </JFXButton>
-        <JFXButton layoutX="200.0" layoutY="457.0" prefHeight="50.0" prefWidth="150.0" ripplerFill="#f7f5f5" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: #000;" text="Sign In">
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
-            <font>
-                <Font name="Segoe UI Bold" size="13.0" />
-            </font>
-        </JFXButton>
-        <Label layoutX="46.0" layoutY="120.0" prefHeight="34.0" prefWidth="117.0" text="Discover" textFill="SILVER">
-            <font>
-                <Font name="Segoe UI Bold" size="28.0" />
-            </font>
-        </Label>
-        <Label layoutX="170.0" layoutY="120.0" prefHeight="34.0" prefWidth="64.0" text="your">
-            <font>
-                <Font name="Segoe UI Bold" size="28.0" />
-            </font>
-        </Label>
-        <Label layoutX="46.0" layoutY="154.0" prefHeight="34.0" prefWidth="64.0" text="next">
-            <font>
-                <Font name="Segoe UI Bold" size="28.0" />
-            </font>
-        </Label>
-        <Label layoutX="114.0" layoutY="154.0" prefHeight="34.0" prefWidth="125.0" text="favourite">
-            <font>
-                <Font name="Segoe UI Bold" size="28.0" />
-            </font>
-        </Label>
-        <Label layoutX="242.0" layoutY="154.0" prefHeight="34.0" prefWidth="78.0" text="Book." textFill="SILVER">
-            <font>
-                <Font name="Segoe UI Bold" size="28.0" />
-            </font>
-        </Label>
-        <Label alignment="CENTER" layoutX="51.0" layoutY="225.0" text="Escape into the world of literature at Novel Nook your" />
-        <Label alignment="CENTER" layoutX="51.0" layoutY="243.0" text="haven for book lovers." />
-        <Label alignment="CENTER" layoutX="51.0" layoutY="293.0" text="Browse our curated collection of bestsellers, classics," />
-        <Label alignment="CENTER" layoutX="51.0" layoutY="311.0" text="and hidden gems. Let our expert staff guide you in" />
-        <Label alignment="CENTER" layoutX="51.0" layoutY="329.0" text="finding your next great read. Whether you're a fiction" />
-        <Label alignment="CENTER" layoutX="51.0" layoutY="347.0" text="fanatic, a non-fiction nerd, or a poetry enthusiast, we've " />
-        <Label alignment="CENTER" layoutX="51.0" layoutY="366.0" text="got you covered. " />
-        <Label alignment="CENTER" layoutX="48.0" layoutY="405.0" text="Come, explore, and get lost in the pages with us." />
         <Label alignment="CENTER" layoutX="469.0" layoutY="36.0" onMouseClicked="#gotoHomeView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70;" text="Home">
             <font>
                 <Font name="Segoe UI Bold" size="12.0" />
@@ -110,5 +61,40 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Label>
+      <Label alignment="CENTER" layoutX="136.0" layoutY="117.0" text="About">
+         <font>
+            <Font name="Segoe UI Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="230.0" layoutY="117.0" text="our - " textFill="#a4a4a4">
+         <font>
+            <Font name="Segoe UI Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="117.0" text="NovelNook">
+         <font>
+            <Font name="Segoe UI Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="122.0" layoutY="165.0" text="Welcome to NovelNook, where we believe that every book opens a " />
+      <Label alignment="CENTER" layoutX="194.0" layoutY="181.0" text="door to new worlds and possibilities." />
+      <Label alignment="CENTER" layoutX="51.0" layoutY="226.0" text="Our Vision:">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="66.0" layoutY="266.0" text="At NovelNook, our vision is to cultivate a vibrant community of readers, " />
+      <Label alignment="CENTER" layoutX="65.0" layoutY="284.0" text="fostering a love for literature that transcends generations. We strive to" />
+      <Label alignment="CENTER" layoutX="66.0" layoutY="302.0" text="provide not just a wide selection of books, but also a hub for creativity, " />
+      <Label alignment="CENTER" layoutX="66.0" layoutY="320.0" text="knowledge, and connection." />
+      <Label alignment="CENTER" layoutX="64.0" layoutY="365.0" text="Join us in celebrating the magic of storytelling and discovering the joy " />
+      <Label alignment="CENTER" layoutX="64.0" layoutY="383.0" text="of reading together!" />
+      <JFXButton layoutX="140.0" layoutY="451.0" onAction="#letsStartButtonClick" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Let's Start" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
     </children>
 </AnchorPane>

@@ -15,7 +15,7 @@
                 <Image url="@../images/hero-image.png" />
             </image>
         </ImageView>
-        <Label layoutX="343.0" layoutY="581.0" text="2024 @ copy Right NovelNook" textFill="SILVER">
+        <Label layoutX="337.0" layoutY="581.0" text="© 2024 NovelNook, Inc. All rights reserved." textFill="SILVER">
             <font>
                 <Font name="Segoe UI Bold" size="12.0" />
             </font>
