@@ -22,11 +22,6 @@ public class MainController {
         new WindowUtil().setStage("AboutView");
     }
 
-    public void gotoContactView(MouseEvent mouseEvent) {
-        this.mainPane.getScene().getWindow().hide();
-        new WindowUtil().setStage("ContactView");
-    }
-
     public void closeWindow(MouseEvent mouseEvent) {
         this.mainPane.getScene().getWindow().hide();
     }
