@@ -6,20 +6,14 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="mainPane" prefHeight="603.0" prefWidth="861.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.controller.MainController">
    <children>
-      <ImageView fitHeight="459.0" fitWidth="510.0" layoutX="421.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/hero-image.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="333.0" layoutY="581.0" text="© 2024 NovelNook, Inc. All rights reserved." textFill="SILVER">
-         <font>
-            <Font name="Segoe UI Bold" size="12.0" />
-         </font>
-      </Label>
+      <Line endX="-29.300018310546875" endY="-37.0" fill="#e5e7eb" layoutX="394.0" layoutY="490.0" startX="477.0" startY="-37.0" stroke="#e5e7eb" />
+      <Line endX="-29.300018310546875" endY="-37.0" fill="#e5e7eb" layoutX="392.0" layoutY="47.0" startX="477.0" startY="-37.0" stroke="#e5e7eb" />
+      <Line endX="-2.9000244140625" endY="562.5" fill="#e5e7eb" layoutX="602.0" layoutY="41.0" startX="3.5" startY="-41.0" stroke="#e5e7eb" />
       <ImageView fx:id="closeButton" fitHeight="15.0" fitWidth="55.0" layoutX="831.0" layoutY="7.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/close-image.png" />
@@ -109,6 +103,20 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+      </Label>
+      <Line endX="100.0" startX="-100.0" />
+      <Line endX="4.699981689453125" endY="577.7000122070312" fill="#e5e7eb" layoutX="374.0" layoutY="37.0" startX="4.699981689453125" startY="-37.0" stroke="#e5e7eb" />
+      <Line endX="3.5" endY="552.0" fill="#e5e7eb" layoutX="806.0" layoutY="51.0" startX="3.5" startY="-51.0" stroke="#e5e7eb" />
+      <Line endX="-29.300018310546875" endY="-37.0" fill="#e5e7eb" layoutX="393.0" layoutY="270.0" startX="477.0" startY="-37.0" stroke="#e5e7eb" />
+      <ImageView fitHeight="459.0" fitWidth="510.0" layoutX="421.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hero-image.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="333.0" layoutY="581.0" style="-fx-background-color: #fff;" text="© 2024 NovelNook, Inc. All rights reserved." textFill="SILVER">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
       </Label>
    </children>
 </AnchorPane>

@@ -6,28 +6,18 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="603.0" prefWidth="861.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.controller.MainController">
+<AnchorPane fx:id="mainPane" prefHeight="610.0" prefWidth="876.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.controller.MainController">
     <children>
-        <ImageView fitHeight="503.0" fitWidth="402.0" layoutX="484.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../images/aboutus-image.png" />
-            </image>
-        </ImageView>
-        <Label layoutX="325.0" layoutY="581.0" text="© 2024 NovelNook, Inc. All rights reserved." textFill="SILVER">
+      <Line endX="37.0" endY="-37.000003814697266" fill="#e5e7eb" layoutX="407.0" layoutY="47.0" startX="473.00006103515625" startY="-37.000003814697266" stroke="#e5e7eb" />
+      <Line endX="4.70001220703125" endY="570.0999755859375" fill="#e5e7eb" layoutX="461.0" layoutY="39.0" startX="4.699981689453125" startY="-37.0" stroke="#e5e7eb" />
+        <Label layoutX="325.0" layoutY="581.0" style="-fx-background-color: #fff;" text="© 2024 NovelNook, Inc. All rights reserved." textFill="SILVER">
             <font>
                 <Font name="Segoe UI Bold" size="12.0" />
             </font>
         </Label>
-        <ImageView fx:id="closeButton" fitHeight="15.0" fitWidth="55.0" layoutX="839.0" layoutY="7.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../images/close-image.png" />
-            </image>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
-        </ImageView>
         <ImageView fitHeight="78.0" fitWidth="81.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/logo.png" />
@@ -61,40 +51,57 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Label>
-      <Label alignment="CENTER" layoutX="136.0" layoutY="117.0" text="About">
+      <Label alignment="CENTER" layoutX="78.0" layoutY="118.0" text="About">
          <font>
             <Font name="Segoe UI Bold" size="28.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="230.0" layoutY="117.0" text="our - " textFill="#a4a4a4">
+      <Label alignment="CENTER" layoutX="172.0" layoutY="118.0" text="our - " textFill="#a4a4a4">
          <font>
             <Font name="Segoe UI Bold" size="28.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="302.0" layoutY="117.0" text="NovelNook">
+      <Label alignment="CENTER" layoutX="244.0" layoutY="118.0" text="NovelNook">
          <font>
             <Font name="Segoe UI Bold" size="28.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="122.0" layoutY="165.0" text="Welcome to NovelNook, where we believe that every book opens a " />
-      <Label alignment="CENTER" layoutX="194.0" layoutY="181.0" text="door to new worlds and possibilities." />
+      <Label alignment="CENTER" layoutX="64.0" layoutY="166.0" text="Welcome to NovelNook, where we believe that every book opens a " />
+      <Label alignment="CENTER" layoutX="136.0" layoutY="182.0" text="door to new worlds and possibilities." />
       <Label alignment="CENTER" layoutX="51.0" layoutY="226.0" text="Our Vision:">
          <font>
             <Font name="Segoe UI Bold" size="14.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="66.0" layoutY="266.0" text="At NovelNook, our vision is to cultivate a vibrant community of readers, " />
-      <Label alignment="CENTER" layoutX="65.0" layoutY="284.0" text="fostering a love for literature that transcends generations. We strive to" />
-      <Label alignment="CENTER" layoutX="66.0" layoutY="302.0" text="provide not just a wide selection of books, but also a hub for creativity, " />
-      <Label alignment="CENTER" layoutX="66.0" layoutY="320.0" text="knowledge, and connection." />
-      <Label alignment="CENTER" layoutX="64.0" layoutY="365.0" text="Join us in celebrating the magic of storytelling and discovering the joy " />
-      <Label alignment="CENTER" layoutX="64.0" layoutY="383.0" text="of reading together!" />
-      <JFXButton layoutX="140.0" layoutY="451.0" onAction="#letsStartButtonClick" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Let's Start" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="54.0" layoutY="265.0" text="At NovelNook, our vision is to cultivate a vibrant community of readers, " />
+      <Label alignment="CENTER" layoutX="53.0" layoutY="283.0" text="fostering a love for literature that transcends generations. We strive to" />
+      <Label alignment="CENTER" layoutX="54.0" layoutY="319.0" text="knowledge, and connection." />
+      <Label alignment="CENTER" layoutX="52.0" layoutY="364.0" text="Join us in celebrating the magic of storytelling and discovering the joy " />
+      <Label alignment="CENTER" layoutX="52.0" layoutY="382.0" text="of reading together!" />
+      <Line endX="35.79998779296875" endY="-37.0" fill="#e5e7eb" layoutX="409.0" layoutY="502.0" startX="471.79998779296875" startY="-37.0" stroke="#e5e7eb" />
+      <Line endX="3.5" endY="555.2999877929688" fill="#e5e7eb" layoutX="648.0" layoutY="53.0" startX="3.5" startY="-52.999996185302734" stroke="#e5e7eb" />
+      <Line endX="3.50006103515625" endY="544.6929321289062" fill="#e5e7eb" layoutX="821.0" layoutY="63.0" startX="3.50006103515625" startY="-63.0" stroke="#e5e7eb" />
+      <Line endX="38.39996337890625" endY="-37.00001525878906" fill="#e5e7eb" layoutX="408.0" layoutY="282.0" startX="469.60003662109375" startY="-37.00001525878906" stroke="#e5e7eb" />
+        <ImageView fitHeight="503.0" fitWidth="402.0" layoutX="505.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/aboutus-image.png" />
+            </image>
+        </ImageView>
+      <JFXButton layoutX="97.0" layoutY="450.0" onAction="#letsStartButtonClick" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Let's Start" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="13.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></JFXButton>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="301.0" text="provide not just a wide selection of books, but also a hub for creativity, " />
+        <ImageView fx:id="closeButton" fitHeight="15.0" fitWidth="55.0" layoutX="839.0" layoutY="7.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/close-image.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
     </children>
 </AnchorPane>
