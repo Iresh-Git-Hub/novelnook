@@ -95,7 +95,7 @@
             <Label layoutX="55.0" layoutY="312.0" text="creativity, knowledge and connection." />
             <Label layoutX="55.0" layoutY="359.0" text="Join us in celebrating the magic of storytelling and discovering the joy" />
             <Label layoutX="55.0" layoutY="377.0" text="of reading together." />
-            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="463.0" prefHeight="45.0" prefWidth="302.0" style="-fx-background-color: #f43f5e; -fx-border-color: #be123c; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;" text="Let's Start" textFill="WHITE">
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="463.0" onAction="#gotoLoginView" prefHeight="45.0" prefWidth="302.0" style="-fx-background-color: #f43f5e; -fx-border-color: #be123c; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;" text="Let's Start" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

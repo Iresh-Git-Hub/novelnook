@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainLoginPane" prefHeight="644.0" prefWidth="539.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="30.0" layoutY="48.0" prefHeight="567.0" prefWidth="472.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <children>
+            <ImageView fitHeight="458.0" fitWidth="313.0" layoutX="78.0" layoutY="77.0" opacity="0.05" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 25;">
+               <image>
+                  <Image url="@../images/aboutus-image.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="121.0" layoutY="545.0" text="\@ 2024 NovelNook, Inc All rights  reserved." textFill="#a4a4a4">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="282.0" layoutY="102.0" text="NovelNook" textFill="#f43f5e">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="37.0" text="NovelNook">
+               <font>
+                  <Font name="Forte" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="68.0" layoutY="436.0" onAction="#gotoDashboard" prefHeight="47.0" prefWidth="335.0" style="-fx-background-color: f43f5e; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #be123c; -fx-border-width: 2;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="62.0" layoutY="102.0" text="Welcome Back to - ">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Circle fill="#f43f5e" layoutX="282.0" layoutY="375.0" radius="41.0" stroke="TRANSPARENT" strokeType="INSIDE">
+               <effect>
+                  <BoxBlur height="255.0" iterations="3" width="255.0" />
+               </effect>
+            </Circle>
+            <Label alignment="CENTER" layoutX="71.0" layoutY="500.0" text="If you haven't account ?">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="301.0" layoutY="496.0" text="Create Account" textFill="#f43f5e">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="295.0" layoutY="392.0" text="Forget Password" textFill="#f43f5e">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <RadioButton layoutX="71.0" layoutY="396.0" mnemonicParsing="false" text="Remember me">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <Label layoutX="67.0" layoutY="173.0" text="Email or Username">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTxt" layoutX="65.0" layoutY="193.0" prefHeight="47.0" prefWidth="335.0" promptText="test12@gmail.com" style="-fx-background-color: fafafb; -fx-border-color: e5e7eb; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 0 10;">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="70.0" layoutY="280.0" text="Password">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passTxt" layoutX="69.0" layoutY="301.0" prefHeight="47.0" prefWidth="335.0" promptText="test123" style="-fx-padding: 0 10; -fx-background-color: fafafb; -fx-border-color: e5e7eb; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;" />
+            <Label fx:id="emailIncorrect" alignment="CENTER" layoutX="69.0" layoutY="245.0" text="Invalid username or email" textFill="RED">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="passIncorrect" alignment="CENTER" layoutX="72.0" layoutY="353.0" text="Invalid Password" textFill="RED">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="closeButton" fitHeight="26.0" fitWidth="20.0" layoutX="504.0" layoutY="22.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/close-button-image.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
