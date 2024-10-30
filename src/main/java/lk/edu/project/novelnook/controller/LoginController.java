@@ -28,6 +28,23 @@ public class LoginController implements Initializable {
         try {
 
             // methana gahanna thiyeno
+            if (emailTxt.getText().isEmpty()) {
+                emailIncorrect.setVisible(true);
+                emailTxt.setStyle(emailTxt.getStyle() + ";-fx-border-color: red;-fx-border-radius: 8px;-fx-background-radius: 8px;-fx-border-width: 2px");
+            }else{
+                if (passTxt.getText().isEmpty()) {
+                    emailIncorrect.setVisible(false);
+                    emailTxt.setStyle(emailTxt.getStyle()+";-fx-border-color: e5e7eb;-fx-border-width: 2px;-fx-border-radius: 8px;-fx-background-radius: 8px;-fx-background-color: fafafb");
+                    passIncorrect.setVisible(true);
+                    passTxt.setStyle(passIncorrect.getStyle()+";-fx-border-color: red;-fx-border-radius: 8px;-fx-border-width: 2px;-fx-background-radius: 8px;");
+                }else{
+                    emailIncorrect.setVisible(false);
+                    passIncorrect.setVisible(false);
+                    emailTxt.setStyle(emailTxt.getStyle()+";-fx-border-color: e5e7eb;-fx-border-width: 2px;-fx-border-radius: 8px;-fx-background-radius: 8px;-fx-background-color: fafafb");
+                    passTxt.setStyle(passTxt.getStyle()+";-fx-border-color: e5e7eb;-fx-border-width: 2px;-fx-border-radius: 8px;-fx-background-radius: 8px;-fx-background-color: fafafb");
+                }
+
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
