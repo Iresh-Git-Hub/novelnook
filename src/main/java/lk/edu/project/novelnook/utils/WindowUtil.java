@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -15,9 +16,10 @@ public class WindowUtil {
         try {
             Stage stage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource("/view/"+path+".fxml"));
-            stage.setScene(new Scene(root));
-            stage.initStyle(StageStyle.UNDECORATED);
-
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            scene.setFill(Color.TRANSPARENT);
             // drag and drop with out titlebar stage
             root.setOnMousePressed(event -> {
                 xOffset = event.getSceneX();

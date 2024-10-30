@@ -3,119 +3,117 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="603.0" prefWidth="861.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="920.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.project.novelnook.AppInitializer">
    <children>
-      <Line endX="-29.300018310546875" endY="-37.0" fill="#e5e7eb" layoutX="394.0" layoutY="490.0" startX="477.0" startY="-37.0" stroke="#e5e7eb" />
-      <Line endX="-29.300018310546875" endY="-37.0" fill="#e5e7eb" layoutX="392.0" layoutY="47.0" startX="477.0" startY="-37.0" stroke="#e5e7eb" />
-      <Line endX="-2.9000244140625" endY="562.5" fill="#e5e7eb" layoutX="602.0" layoutY="41.0" startX="3.5" startY="-41.0" stroke="#e5e7eb" />
-      <ImageView fx:id="closeButton" fitHeight="15.0" fitWidth="55.0" layoutX="831.0" layoutY="7.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/close-image.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView fitHeight="78.0" fitWidth="81.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <AnchorPane layoutX="10.0" layoutY="33.0" prefHeight="640.0" prefWidth="880.0" style="-fx-background-color: #fff; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Line endX="-100.0" endY="602.0" fill="#e5e7eb" layoutX="568.0" layoutY="21.0" startX="-100.0" stroke="#e5e7eb" />
+            <Line endX="-100.0" endY="602.0" fill="#e5e7eb" layoutX="699.0" layoutY="21.0" startX="-100.0" stroke="#e5e7eb" />
+            <Line endX="-100.0" endY="602.0" fill="#e5e7eb" layoutX="822.0" layoutY="21.0" startX="-100.0" stroke="#e5e7eb" />
+            <Line endX="-100.0" endY="602.0" fill="#e5e7eb" layoutX="941.0" layoutY="21.0" startX="-100.0" stroke="#e5e7eb" />
+            <Line endX="455.60003662109375" endY="32.399993896484375" fill="#e5e7eb" layoutX="424.0" layoutY="9.0" startX="-10.79998779296875" startY="32.399993896484375" stroke="#e5e7eb" />
+            <Line endX="461.20001220703125" endY="32.40000915527344" fill="#e5e7eb" layoutX="424.0" layoutY="139.0" startX="-14.79998779296875" startY="32.40000915527344" stroke="#e5e7eb" />
+            <Line endX="461.99993896484375" endY="32.4000244140625" fill="#e5e7eb" layoutX="424.0" layoutY="272.0" startX="-13.800018310546875" startY="34.0" stroke="#e5e7eb" />
+            <Line endX="458.79998779296875" endY="32.4000244140625" fill="#e5e7eb" layoutX="424.0" layoutY="413.0" startX="-15.199981689453125" startY="32.399993896484375" stroke="#e5e7eb" />
+            <Line endX="457.99993896484375" endY="32.4000244140625" fill="#e5e7eb" layoutX="424.0" layoutY="552.0" startX="-12.0" startY="32.4000244140625" stroke="#e5e7eb" />
+            <ImageView fitHeight="563.0" fitWidth="433.0" layoutX="431.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hero-image.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="171.0" text="Next Favourite">
+               <font>
+                  <Font name="Segoe UI Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="170.0" text="Book." textFill="#0800fa">
+               <font>
+                  <Font name="Segoe UI Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="247.0" text="Escape into the world of literature at NovelNook your haven for" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="263.0" text="book lovers." />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="306.0" text="Browse our curated collection of bestsellers, classics, and hidden gems." />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="322.0" text="Let our expert staff guide you in finding your next great read." />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="363.0" text="Whether you're a fiction fanatic, a non-fiction nerd, or a poetry" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="380.0" text="enthusiast, we've got you covered. Come, explore, and get lost in the" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="397.0" text="pages with us." />
+            <JFXButton layoutX="35.0" layoutY="468.0" prefHeight="55.0" prefWidth="166.0" style="-fx-background-color: #0800fa; -fx-border-radius: 8; -fx-background-radius: 8;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="212.0" layoutY="468.0" prefHeight="55.0" prefWidth="166.0" ripplerFill="#eaeaea" style="-fx-background-color: #fff; -fx-border-color: #0800fa; -fx-border-radius: 8; -fx-background-radius: 8;" text="Sign Up" textFill="#0800fa">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="494.0" layoutY="41.0" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #fff;" text="Home">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="620.0" layoutY="41.0" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #fff;" text="Service">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="747.0" layoutY="40.0" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #fff;" text="About Us">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Line endX="22.20001220703125" endY="7.62939453125E-6" layoutX="529.0" layoutY="69.0" startX="-27.79998779296875" startY="7.62939453125E-6" strokeWidth="2.0" />
+            <Line endX="32.4000244140625" endY="7.62939453125E-6" layoutX="650.0" layoutY="69.0" startX="-27.79998779296875" startY="7.62939453125E-6" strokeWidth="2.0" />
+            <Line endX="43.20001220703125" endY="7.62939453125E-6" layoutX="773.0" layoutY="69.0" startX="-27.79998779296875" startY="7.62939453125E-6" strokeWidth="2.0" />
+            <Label layoutX="333.0" layoutY="611.0" text="\@ 2024 NovelNook, Inc All rights  reserved." textFill="#a4a4a4" />
+            <Circle fill="DODGERBLUE" layoutX="408.0" layoutY="156.0" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <BoxBlur height="255.0" iterations="3" width="255.0" />
+               </effect>
+            </Circle>
+         </children></AnchorPane>
+      <ImageView fitHeight="69.0" fitWidth="76.0" layoutX="29.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="95.0" layoutY="38.0" text="Novel Nook">
+      <Label layoutX="48.0" layoutY="173.0" text="Discover" textFill="#0800fa">
          <font>
-            <Font name="Forte" size="28.0" />
+            <Font name="Segoe UI Bold" size="26.0" />
          </font>
       </Label>
-      <JFXButton layoutX="37.0" layoutY="457.0" prefHeight="50.0" prefWidth="149.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Sign Up" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
+      <Label layoutX="162.0" layoutY="174.0" text="Your">
          <font>
-            <Font name="Segoe UI Bold" size="13.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="200.0" layoutY="457.0" prefHeight="50.0" prefWidth="150.0" ripplerFill="#f7f5f5" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: #000;" text="Sign In">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="Segoe UI Bold" size="13.0" />
-         </font>
-      </JFXButton>
-      <Label layoutX="46.0" layoutY="120.0" prefHeight="34.0" prefWidth="117.0" text="Discover" textFill="#a4a4a4">
-         <font>
-            <Font name="Segoe UI Bold" size="28.0" />
+            <Font name="Segoe UI Bold" size="26.0" />
          </font>
       </Label>
-      <Label layoutX="170.0" layoutY="120.0" prefHeight="34.0" prefWidth="64.0" text="your">
+      <Label layoutX="92.0" layoutY="78.0" text="Novel Nook">
          <font>
-            <Font name="Segoe UI Bold" size="28.0" />
-         </font>
-      </Label>
-      <Label layoutX="46.0" layoutY="154.0" prefHeight="34.0" prefWidth="64.0" text="next">
-         <font>
-            <Font name="Segoe UI Bold" size="28.0" />
-         </font>
-      </Label>
-      <Label layoutX="114.0" layoutY="154.0" prefHeight="34.0" prefWidth="125.0" text="favourite">
-         <font>
-            <Font name="Segoe UI Bold" size="28.0" />
-         </font>
-      </Label>
-      <Label layoutX="242.0" layoutY="154.0" prefHeight="34.0" prefWidth="78.0" text="Book." textFill="#a4a4a4">
-         <font>
-            <Font name="Segoe UI Bold" size="28.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="51.0" layoutY="225.0" text="Escape into the world of literature at Novel Nook your" />
-      <Label alignment="CENTER" layoutX="51.0" layoutY="243.0" text="haven for book lovers." />
-      <Label alignment="CENTER" layoutX="51.0" layoutY="293.0" text="Browse our curated collection of bestsellers, classics," />
-      <Label alignment="CENTER" layoutX="51.0" layoutY="311.0" text="and hidden gems. Let our expert staff guide you in" />
-      <Label alignment="CENTER" layoutX="51.0" layoutY="329.0" text="finding your next great read. Whether you're a fiction" />
-      <Label alignment="CENTER" layoutX="51.0" layoutY="347.0" text="fanatic, a non-fiction nerd, or a poetry enthusiast, we've " />
-      <Label alignment="CENTER" layoutX="51.0" layoutY="366.0" text="got you covered. " />
-      <Label alignment="CENTER" layoutX="48.0" layoutY="405.0" text="Come, explore, and get lost in the pages with us." />
-      <Label alignment="CENTER" layoutX="469.0" layoutY="36.0" onMouseClicked="#gotoHomeView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #000; -fx-border-radius: 70; -fx-background-radius: 70;" text="Home" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI Bold" size="12.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Label>
-      <Label alignment="CENTER" layoutX="575.0" layoutY="36.0" onMouseClicked="#gotoServiceView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70;" text="Service">
-         <font>
-            <Font name="Segoe UI Bold" size="12.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Label>
-      <Label alignment="CENTER" layoutX="677.0" layoutY="36.0" onMouseClicked="#gooAboutView" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #fff; -fx-border-radius: 70; -fx-background-radius: 70;" text="About ">
-         <font>
-            <Font name="Segoe UI Bold" size="12.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Label>
-      <Line endX="100.0" startX="-100.0" />
-      <Line endX="4.699981689453125" endY="577.7000122070312" fill="#e5e7eb" layoutX="374.0" layoutY="37.0" startX="4.699981689453125" startY="-37.0" stroke="#e5e7eb" />
-      <Line endX="3.5" endY="552.0" fill="#e5e7eb" layoutX="806.0" layoutY="51.0" startX="3.5" startY="-51.0" stroke="#e5e7eb" />
-      <Line endX="-29.300018310546875" endY="-37.0" fill="#e5e7eb" layoutX="393.0" layoutY="270.0" startX="477.0" startY="-37.0" stroke="#e5e7eb" />
-      <ImageView fitHeight="459.0" fitWidth="510.0" layoutX="421.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/hero-image.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="333.0" layoutY="581.0" style="-fx-background-color: #fff;" text="© 2024 NovelNook, Inc. All rights reserved." textFill="SILVER">
-         <font>
-            <Font name="Segoe UI Bold" size="12.0" />
+            <Font name="Forte" size="27.0" />
          </font>
       </Label>
    </children>
